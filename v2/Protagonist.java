@@ -1,19 +1,14 @@
 /********************
   Team Coleks - Colin Hosking, Aleksandra Koroza, Johnny Wong
   APCS1 pd 8
-  HW 28 -- Ye Olde Role Playing Game
-  2017-11-08
+  HW 30 -- Ye Olde Role Playing Game, Improved
+  2017-11-13
 ********************/
 
-public class Protagonist{
-    // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
+public class Protagonist extends Character{
+   // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
     String name;
-    static int HP;
-    int strength;
-    final int defense= 40;
-    int currentDef;
-    final double aRate=0.4;
-    double attackRate;
+
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -29,28 +24,9 @@ public class Protagonist{
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     // ~~~~~~~~~~~~~~ METHODS ~~~~~~~~~~~~~~~~~~~
-    public boolean isAlive(){
-	if (HP <= 0){ return false;}
-	return true;
-    }
-
-    public int getDefense(){
-	return defense;
-    }
 
     public String getName(){
 	return name;
-    }
-
-    public void lowerHP(int num){
-	HP -= num;
-    }
-
-    public int attack(Monster n){
-	int damage;
-	damage= (int)((strength*attackRate)-n.defense); //would have to be Monster.defense
-        n.lowerHP(damage);
-	return damage;
     }
 
     public void specialize(){
