@@ -99,9 +99,8 @@ public class YoRPG
 
     //instantiate the player's character
      if (classNum == 1){
-	Protagonist pat = new Wizard( name );  //pat is a Wizard, but is created with the Protagonist template
+        pat = new Wizard( name );  //pat is a Wizard, but is created with the Protagonist template
      }
-     
     //=========================================================
 
   }//end newGame()
