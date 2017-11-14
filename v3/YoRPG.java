@@ -85,7 +85,7 @@ public class YoRPG
      String s1 = "\nChoose your class:";
      s1+= "\n1: Wizard";
      s1+= "\n2: Tank";
-     s1+= "\n3: CLASS 3";
+     s1+= "\n3: Archer";
      s1+= "\nSelection: ";
      
      System.out.print(s1); //prints out text prompting class selection
@@ -103,6 +103,9 @@ public class YoRPG
      }
       if (classNum == 2){
         pat = new Tank( name );  //pat is a Tank, but is created with the Protagonist template
+     }
+      if (classNum == 3){
+        pat = new Archer( name );  //pat is a Archer, but is created with the Protagonist template
      }
     //=========================================================
 
