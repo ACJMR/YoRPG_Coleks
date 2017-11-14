@@ -13,4 +13,8 @@ public class Wizard extends Protagonist{
 	HP = 200; //adds 75 more HP to default protagonist
 
     }
+
+    public static String about(){
+	return "Hailing from the remote northern peaks, Wizards have an increased HP from 125 --> 200";
+    }
 } //end Wizard
