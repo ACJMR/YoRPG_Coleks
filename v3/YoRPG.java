@@ -84,7 +84,7 @@ public class YoRPG
  
      String s1 = "\nChoose your class:";
      s1+= "\n1: Wizard";
-     s1+= "\n2: CLASS 2";
+     s1+= "\n2: Tank";
      s1+= "\n3: CLASS 3";
      s1+= "\nSelection: ";
      
@@ -100,6 +100,9 @@ public class YoRPG
     //instantiate the player's character
      if (classNum == 1){
         pat = new Wizard( name );  //pat is a Wizard, but is created with the Protagonist template
+     }
+      if (classNum == 2){
+        pat = new Tank( name );  //pat is a Tank, but is created with the Protagonist template
      }
     //=========================================================
 
