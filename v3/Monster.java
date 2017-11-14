@@ -1,14 +1,14 @@
 /********************
   Team Coleks - Colin Hosking, Aleksandra Koroza, Johnny Wong
   APCS1 pd 8
-  HW 30 -- Ye Olde Role Playing Game, Improved
-  2017-11-13
+  HW 31 -- Ye Olde Role Playing Game, Expanded
+  2017-11-14
 ********************/
 
 public class Monster extends Character{
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
     
-    private String name;
+    protected String name;
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

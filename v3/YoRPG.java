@@ -80,10 +80,32 @@ public class YoRPG
     }
     catch ( IOException e ) { }
 
+    //=================== CLASS SELECTION ====================
+ 
+     String s1 = "\nChoose your class:";
+     s1+= "\n1: Wizard";
+     s1+= "\n2: CLASS 2";
+     s1+= "\n3: CLASS 3";
+     s1+= "\nSelection: ";
+     
+     System.out.print(s1); //prints out text prompting class selection
+
+     int classNum = 0;
+     
+     try {
+	  classNum = Integer.parseInt( in.readLine() );  //classNum is set to the user's input
+     } 
+     catch ( IOException e ) { }
+
     //instantiate the player's character
-    pat = new Protagonist( name );
+     if (classNum == 1){
+	Protagonist pat = new Wizard( name );  //pat is a Wizard, but is created with the Protagonist template
+     }
+     
+    //=========================================================
 
   }//end newGame()
+
 
 
   /*=============================================
@@ -156,6 +178,7 @@ public class YoRPG
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+
   public static void main( String[] args )
   {
     //As usual, move the begin-comment bar down as you progressively 
@@ -166,7 +189,7 @@ public class YoRPG
     YoRPG game = new YoRPG();
 
     int encounters = 0;
-
+    
     while( encounters < MAX_ENCOUNTERS ) {
     if ( !game.playTurn() )
 		break;
