@@ -8,7 +8,7 @@ This is our take on the classic RPG game genre! :octocat:
 2. Tank
     * Pure muscle and steel, this character has greatly increased health and strength. His bulk, however, slows down his attack rate. 
 3. Archer
-    * A cunning a elegant character, what the archer lacks in health she makes up with increased attack rate.
+    * A cunning and elegant character, what the archer lacks in health she makes up with increased attack rate.
 
 
 
