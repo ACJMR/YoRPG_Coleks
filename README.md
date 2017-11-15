@@ -14,7 +14,7 @@ This is our take on the classic RPG game genre! :octocat:
     * Archers have an increased HP from 125 --> 175 and an increased attackRate from 0.4 --> 0.6
 
 
-*Players may encounter three terrifying monsters on their journey*:
+*Players may encounter many terrifying monsters on their journey*:
 
 1. Slime
    * Bouncing from the Forests of Piloticus, slimes are fragile creatures, generally friendly unless you insult their fashion choices.
