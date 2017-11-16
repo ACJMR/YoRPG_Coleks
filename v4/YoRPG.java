@@ -107,6 +107,7 @@ public class YoRPG
       if (classNum == 3){
         pat = new Archer( name );  //pat is a Archer, but is created with the Protagonist template
      }
+      System.out.println(pat.about());
     //=========================================================
 
   }//end newGame()

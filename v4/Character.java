@@ -30,7 +30,7 @@ public class Character{
     }
 
     public int attack(Character character){
-	int damage = (int) (strength * attackRate) - character.currentDef;
+	int damage = (int) (strength * attackRate) - character.getDefense();
 	if (damage < 0){
 	    damage = 0;
 	}
