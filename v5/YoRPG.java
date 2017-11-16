@@ -136,22 +136,24 @@ public class YoRPG
      } 
      catch ( IOException e ) { }
 
-    //instantiate the player's opponent
+    //instantiate the player's first opponent
+     String mons = "";
+     
      if (monsNum == 1){
 	 smaug = new Orc();  //smaug is an Orc, but is created with the Monster template
-	 c = "Orc";
+	 mons = "Orc";
      }
       if (monsNum == 2){
 	  smaug = new Slime();  //smaug is a Slime, but is created with the Monster template
-	  c = "Slime";
+	  mons = "Slime";
      }
       if (monsNum == 3){
 	  smaug = new KoolAid();  //smaug is a KoolAid, but is created with the Monster template
-	  c = "KoolAid";
+	  mons = "KoolAid";
      }
       if (monsNum == 4){
 	  smaug = new Troll(); //smaug is a Troll, but is created with the Monster template
-	  c = "Troll";
+	  mons = "Troll";
       }
 
 
@@ -176,13 +178,39 @@ public class YoRPG
   {
     int i = 1;
     int d1, d2;
+    String newMons = "";
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
+	System.out.println( "\nLo, yonder monster " + newMons + "approacheth!" );
 
 	    //smaug = new Monster();
+
+	    int randMons;
+	    
+
+	    if ( !smaug.isAlive() ){
+	        randMons = (int) (Math.random() * 3 + 1);
+		if (randMons == 1){
+		    
+		    smaug = new Orc();  //smaug is an Orc, but is created with the Monster template		    
+		    newMons = "Orc";
+		}
+		if (randMons == 2){
+		    smaug = new Slime();  //smaug is a Slime, but is created with the Monster template
+		    newMons = "Slime";
+		}
+		if (randMons == 3){
+		    smaug = new KoolAid();  //smaug is a KoolAid, but is created with the Monster template
+		    newMons = "KoolAid";
+		}
+		if (randMons == 4){
+		    smaug = new Troll(); //smaug is a Troll, but is created with the Monster template
+		    newMons = "Troll";
+		}
+		
+	    }
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
@@ -207,7 +235,7 @@ public class YoRPG
         System.out.println( "\n" + pat.getName() + " dealt " + d1 +
                             " points of damage.");
 
-        System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
+        System.out.println( "\n" + "Ye Olde Monster " + newMons + " smacked " + pat.getName() +
                             " for " + d2 + " points of damage.");
 	    }//end while
 
