@@ -1,6 +1,6 @@
 # YoRPG_Coleks
 This is our take on the classic RPG game genre! :octocat:
-
+(Developers of this lovely game are Aleksandra K., Colin H., and Johnny W.)
 
 *Players may choose from three exciting protagonists*:
 1. Wizard
@@ -28,5 +28,11 @@ This is our take on the classic RPG game genre! :octocat:
 4. Troll
    * Hailing from the caverns beneath the Western Plains, Trolls have superiour armour forged deep in their iron mines. 
    * Trolls have an increased defense from 20 --> 60.
+
+
+
+
+Gameplay is simple and intuitive. Players first the difficulty of gameplay. They then choose their protagonist (from the above choices) and a worthy opponent (also from above choices). The game then proceeds with successive attacks between player and monster. Game ends when either the player's or the monster's HP reaches 0.
+
 
 **Come join us on our noble quest and slay the dragon!.**
