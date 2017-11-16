@@ -39,6 +39,7 @@ Gameplay is simple and intuitive:
 * The game then proceeds on a turn system. Once a monster is encountered, a fight begins 
 * Successive attacks between player and monster are exchanged, and a player may opt to use their special attack, but in return be more vulnerable. The fight ends when either the player's or the monster's HP reaches 0.
 * The game ends when either the player's HP reaches 0 (defeat), or 10 turns have elapsed (victory)
+* If the player's HP is not yet 0 and 10 turns have not elapsed, a new monster is 'respawned' and the player can encounter this new monster.
 
 **Come join us on our noble quest and slay the beasts!.**
 
