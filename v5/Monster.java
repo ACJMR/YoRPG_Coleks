@@ -5,7 +5,7 @@
   2017-11-14
 ********************/
 
-public class Monster extends Character{
+public abstract class Monster extends Character{
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
     
     protected String name;
@@ -28,6 +28,7 @@ public class Monster extends Character{
 	return name;
     }
     
+    public abstract String about();
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }

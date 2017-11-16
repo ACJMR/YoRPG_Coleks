@@ -15,7 +15,7 @@ public class Orc extends Monster{
 
     }
 
-    public static String about(){
+    public String about(){
 	return "Terrifying ethereal beings, Orcs have an increased HP from 150 --> 600, but a greatly reduced attack rate.";
     }
 } //end Orc

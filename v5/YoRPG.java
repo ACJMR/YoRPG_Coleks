@@ -85,7 +85,7 @@ public class YoRPG
      String s1 = "\nChoose your class:";
      s1+= "\n1: Wizard";
      s1+= "\n2: Tank";
-     s1+= "\n3: Archer";
+     s1+= "\n3: Archer\n";
      s1+= "\nSelection: ";
      
      System.out.print(s1); //prints out text prompting class selection
@@ -124,7 +124,7 @@ public class YoRPG
      s2+= "\n1: Orc";
      s2+= "\n2: Slime";
      s2+= "\n3: KoolAid";
-     s2+= "\n4: Troll";
+     s2+= "\n4: Troll\n";
      s2+= "\nSelection: ";
      
      System.out.print(s2); //prints out text prompting monster selection
@@ -139,16 +139,26 @@ public class YoRPG
     //instantiate the player's opponent
      if (monsNum == 1){
 	 smaug = new Orc();  //smaug is an Orc, but is created with the Monster template
+	 c = "Orc";
      }
       if (monsNum == 2){
 	  smaug = new Slime();  //smaug is a Slime, but is created with the Monster template
+	  c = "Slime";
      }
       if (monsNum == 3){
 	  smaug = new KoolAid();  //smaug is a KoolAid, but is created with the Monster template
+	  c = "KoolAid";
      }
       if (monsNum == 4){
 	  smaug = new Troll(); //smaug is a Troll, but is created with the Monster template
+	  c = "Troll";
       }
+
+
+    System.out.println();
+    System.out.println("You have selected the " + c + " monster.");
+    System.out.println(smaug.about());
+
       //========================================================
 
   }//end newGame()

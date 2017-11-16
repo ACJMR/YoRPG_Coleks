@@ -14,7 +14,7 @@ public class Slime extends Monster{
 	currentDef = defense; //Changes defense to 10 instead of default 40
     }
 
-    public static String about(){
+    public String about(){
 	return "Bouncing from the Forests of Piloticus, slimes boast a defense change from 40 --> 10.";
     }
 }//ends Slime

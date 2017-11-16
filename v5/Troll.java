@@ -14,7 +14,7 @@ public class Troll extends Monster{
 	currentDef = 60; //Changes defense to 60 instead of default 40
     }
 
-    public static String about(){
+    public String about(){
 	return "Hailing from the caverns beneath the Western Plains, Trolls have an increased defense from 40 --> 60";
     }
 }//ends Troll

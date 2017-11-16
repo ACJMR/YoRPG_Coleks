@@ -14,7 +14,7 @@ public class KoolAid extends Monster{
 	currentDef = defense; //Changes defense to 150 instead of default 40
     }
 
-    public static String about(){
+    public String about(){
 	return "Flowing from the Rivers of Nebraskaid, KoolAids possess a defense change from 40 --> 150.";
     }
 }//ends KoolAid
