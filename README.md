@@ -32,7 +32,21 @@ This is our take on the classic RPG game genre! :octocat:
 
 
 
-Gameplay is simple and intuitive. Players first the difficulty of gameplay. They then choose their protagonist (from the above choices) and a worthy opponent (also from above choices). The game then proceeds with successive attacks between player and monster. Game ends when either the player's or the monster's HP reaches 0.
+Gameplay is simple and intuitive:
+
+* Players first the difficulty of gameplay. This determines how easily a monster will be encountered. 
+* They then choose their protagonist (from the above choices) and a worthy opponent (also from above choices), convinient about messages provide users with information regarding their selection. 
+* The game then proceeds on a turn system. Once a monster is encountered, a fight begins 
+* Successive attacks between player and monster are exchanged, and a player may opt to use their special attack, but in return be more vulnerable. The fight ends when either the player's or the monster's HP reaches 0.
+* The game ends when either the player's HP reaches 0 (defeat), or 10 turns have elapsed (victory)
+
+**Come join us on our noble quest and slay the beasts!.**
 
 
-**Come join us on our noble quest and slay the dragon!.**
+Developer Notes:
+
+* Increase MAX_ENCOUNTERS to allow for longer games (especially on lower difficulty)
+* Restructure Monster to be abstract, so all monsters are forced to poccess the about() method.
+* Utilize about() to display class/monster info when user makes a selection
+* Add Monster-type selection
+* Change the attack() funtionality to include an element of randomness
