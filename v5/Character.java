@@ -31,6 +31,7 @@ public class Character{
 
     public int attack(Character character){
 	int damage = (int) (strength * attackRate) - character.currentDef;
+	damage = (int) (damage * (.5 + Math.random()*1)); //multiplies damage by .5-1.5 to simulate randomness
 	if (damage < 0){
 	    damage = 0;
 	}

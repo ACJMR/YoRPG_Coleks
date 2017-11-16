@@ -8,8 +8,8 @@ HW 31 -- Ye Olde Role Playing Game, Expanded
 public class Troll extends Monster{
 
     //Constructor
-    public Troll(String name){
-	super(name);
+    public Troll(){
+	super();
 	defense = 60;
 	currentDef = 60; //Changes defense to 60 instead of default 40
     }

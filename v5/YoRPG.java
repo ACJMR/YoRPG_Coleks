@@ -98,15 +98,25 @@ public class YoRPG
      catch ( IOException e ) { }
 
     //instantiate the player's character
+
+     String c = ""; //used to store class name
+
      if (classNum == 1){
         pat = new Wizard( name );  //pat is a Wizard, but is created with the Protagonist template
+	c = "Wizard";
      }
       if (classNum == 2){
         pat = new Tank( name );  //pat is a Tank, but is created with the Protagonist template
+	c = "Tank";
      }
       if (classNum == 3){
         pat = new Archer( name );  //pat is a Archer, but is created with the Protagonist template
+	c = "Archer";
      }
+      
+    System.out.println();
+    System.out.println("You have selected the " + c + " class.");
+    System.out.println(pat.about());
     //=========================================================
         //=================== Monster SELECTION ====================
  
@@ -114,6 +124,7 @@ public class YoRPG
      s2+= "\n1: Orc";
      s2+= "\n2: Slime";
      s2+= "\n3: KoolAid";
+     s2+= "\n4: Troll";
      s2+= "\nSelection: ";
      
      System.out.print(s2); //prints out text prompting monster selection
@@ -135,7 +146,10 @@ public class YoRPG
       if (monsNum == 3){
 	  smaug = new KoolAid();  //smaug is a KoolAid, but is created with the Monster template
      }
-    //=========================================================
+      if (monsNum == 4){
+	  smaug = new Troll(); //smaug is a Troll, but is created with the Monster template
+      }
+      //========================================================
 
   }//end newGame()
 

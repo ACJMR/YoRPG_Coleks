@@ -18,6 +18,7 @@ public class Monster extends Character{
 	strength = 20 + (int) (Math.random() * (65 - 20));
 	currentDef = 20;
 	attackRate = 1.0;
+	
     }
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
